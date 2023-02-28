@@ -1,0 +1,17 @@
+<table>
+    <tr>
+        <td>Team 1</td>
+        <td>Team 1 Score</td>
+        <td>Team 2 Score</td>
+        <td>Team 2</td>
+    </tr>
+
+<% fixtures.forEach(fixture => { %> 
+    <tr>
+    <td><%=fixture.entry_1_name %> [<%= fixture.entry_1_player_name %>]</td>
+    <td><%=fixture.entry_1_points %></td>
+    <td><%=fixture.entry_2_points %></td>
+    <td><%=fixture.entry_2_name %> [<%= fixture.entry_2_player_name %>]</td>
+    </tr>
+<% }) %>
+</table>
